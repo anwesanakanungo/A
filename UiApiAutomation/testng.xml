@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test thread-count="1" preserve-order="true" name="ApiUiTestSuite">
+        <classes>
+            <class name="api.testcases.TestCreateBooking"/>
+            <class name="api.testcases.TestGetBooking"/>
+            <class name="ui.testcases.TestAmazonFilterSearch"/>
+            <class name="ui.testcases.TestAmazonFiveStarRatingCount"/>
+        </classes>
+    </test>
+</suite>
