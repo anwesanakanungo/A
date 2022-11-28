@@ -6,13 +6,19 @@ Frame work support :
 4.	Response of the each Post request will be shared by GET and PUT APIS using DataStore class .
 5.	Faker API is used for uniquely creating data for each test . Assumption:
 6.	Always run the Create Booking and then GET that booking . (Create bookingid will be input for the GET booking)
+
+
 Note : Update and delete cannot be run because of the Token is not generated.( Username password is not working )
+
+
 How to run the Test :
 1.	Install java 8 installed and set JAVA_HOME
 2.	Set Maven_home
 3.	Check out the code .
 4.	Go to the terminal run maven install or mvn clean install test -DsuiteXmlFile="testng.xml"
 UI Automation Framework built using Rest Assured, Java 8 , Maven, Test NG , AssertJ , Lombok ,JAVA faker
+
+
 Frame work support : Design pattern used :
 1.	Factory design pattern (Browser support , Currently support CHORME(106) and firefox (104) it can be extended any number of Browsers )
 2.	Page objects in fluent style
