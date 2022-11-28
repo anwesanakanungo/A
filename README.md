@@ -8,6 +8,7 @@ Configuration file will be shared both by API and UI classes .
 Response of the each Post request will be shared by GET and PUT APIS using DataStore class .
 Faker API is used for uniquely creating data for each test . Assumption:
 Always run the Create Booking and then GET that booking . (Create bookingid will be input for the GET booking)
+Note : Update and delete cannot be run because of the Token is not genereated.( Username password is not working )
 How to run the Test :
 
 Install java 8 installed and set JAVA_HOME
