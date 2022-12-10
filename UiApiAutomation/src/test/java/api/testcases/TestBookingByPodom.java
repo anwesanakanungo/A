@@ -31,7 +31,6 @@ public class TestBookingByPodom {
         int bookingid = getJsonValue.get("bookingid");
         System.out.println(bookingid);
         DataStore.setValue("bookingid", bookingid);
-        System.out.println(DataStore.getValue("bookingid"));
         //Verify the response code in 200
         assertThat(response.statusCode())
                 .isEqualTo(200);
