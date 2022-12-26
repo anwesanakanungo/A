@@ -96,7 +96,11 @@
             <artifactId>podam</artifactId>
             <version>7.2.11.RELEASE</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.creditdatamw.labs</groupId>
+            <artifactId>zerocell-core</artifactId>
+            <version>0.3.2</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
