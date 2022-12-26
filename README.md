@@ -1,4 +1,4 @@
-API Automation Framework built using Rest Assured, Java 8 , Maven, Test NG , AssertJ , Lombok ,JAVA faker , Jackson binding .
+API Automation Framework built using Rest Assured, Java 8 , Maven, Test NG , AssertJ , Lombok ,JAVA faker , Jackson binding ,PODOM (Generating data for POJO )
 Frame work support :
 1.	Design pattern used : Builder design pattern ( for Post and PUT request ) and it also support the predefined user input data like JSON file and make changes on the same is also taken care in ApiUtilClass .
 2.	Each response of the API will be stored in the OUTPUT folder .
