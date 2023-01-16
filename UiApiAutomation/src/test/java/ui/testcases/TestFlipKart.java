@@ -40,7 +40,7 @@ public class TestFlipKart {
         @Test
         public void filterPriceTest() throws InterruptedException, MalformedURLException {
         //docker container run -p 4445:4445 --name anwesana1 selenium/standalone-chrome
-            driver=DriverManager1.getDriver(String.valueOf(BrowserTypes.REMOTECHROME));
+            driver=DriverManager1.remoteSupplier.get();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             GoogleSearchPage.using(driver)
                     .goToGoogle()
