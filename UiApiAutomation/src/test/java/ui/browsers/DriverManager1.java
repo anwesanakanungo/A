@@ -28,20 +28,7 @@ public static final Supplier<WebDriver> remoteSupplier=()-> {
     }
     return remoteWebDriver;
  } ;
-
-    private static final HashMap<String,Supplier<WebDriver>> MAP = new HashMap<>();
-
-    static {
-        MAP.put("CHROME" ,chromeSupplier);
-        MAP.put("FIREFOX" ,FirefoxSupplier);
-        MAP.put("REMOTE",remoteSupplier);
-
-    }
-
     private DriverManager1() {
     }
 
-    public static WebDriver getDriver(String browser){
-        return MAP.get(browser).get();
-    }
 }
