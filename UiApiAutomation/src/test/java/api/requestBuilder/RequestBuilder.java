@@ -14,8 +14,8 @@ public class RequestBuilder {
     public static RequestSpecification bulidRequestForGetCall() {
         return given()
                 .baseUri(ConfigReader.getValue("BASE_URL_API"))
-                .log()
-                .all();
+                .log().ifValidationFails();
+
     }
 
     public static RequestSpecification bulidRequestForPostCall() {
