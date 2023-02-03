@@ -2,7 +2,7 @@ package api.util;
 
 import java.util.LinkedHashMap;
 
-public class DataStore {
+public final  class DataStore {
     private static final ThreadLocal<LinkedHashMap<String, Object>> dataMap =
             ThreadLocal.withInitial(() -> new LinkedHashMap<String, Object>());
 
