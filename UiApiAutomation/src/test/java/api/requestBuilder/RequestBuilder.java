@@ -6,7 +6,7 @@ import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.given;
 
-public class RequestBuilder {
+public final class RequestBuilder {
 
     private RequestBuilder() {
     }
